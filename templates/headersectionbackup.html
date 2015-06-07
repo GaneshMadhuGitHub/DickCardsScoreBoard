@@ -1,0 +1,60 @@
+<div class="span12" ng-controller="tabsTemplateManagerCtrl">
+	<div class="box"  style="margin-left: 10px; margin-right: 10px;">
+		<div class="box-header">
+			<i class="icon-user icon-large"></i>
+			<h5>My  Board</h5>
+		</div>
+		<div class="form-group">
+			<input class="form-control playername" placeholder="Enter P Name"  ng-model="player.name">
+			<button class="btn btn-outline btn-primary btn-xs "  type="button" ng-click="addNewPlayer(player)">
+				Add P
+			</button>
+		</div>
+		<div class="box-content box-table">
+			<!-- <table class="table table-hover tablesorter">
+			<thead>
+			<tr>
+			<th class="header">P1</th>
+			<th class="header">P2</th>
+			<th class="header">P3</th>
+			<th class="header">P4</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+			<td><input id="inp1" class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType"></td>
+			<td><input id="inp1" class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType"></td>
+			<td><input id="inp1" class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType"></td>
+			<td><input id="inp1" class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType"></td>
+			</tr>
+			<tr>
+			<td><input id="inp1" class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType"></td>
+			<td><input id="inp1" class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType"></td>
+			<td><input id="inp1" class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType"></td>
+			<td><input id="inp1" class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType"></td>
+			</tr>
+			<tr>
+			<td><input id="inp1" class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType"></td>
+			<td><input id="inp1" class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType"></td>
+			<td><input id="inp1" class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType"></td>
+			<td><input id="inp1" class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType"></td>
+			</tr>
+			</tbody>
+			</table> -->
+			<table class="table table-hover tablesorter">
+				<thead>
+					<tr>
+						<th ng-repeat="column in table"><span ng-bind="column"></span></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td ng-repeat="column in table">
+							<input  class="form-control ng-pristine ng-invalid ng-invalid-required tq-validate" type="text" tq-validate-after="" required="" ng-model="user.partyType">
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

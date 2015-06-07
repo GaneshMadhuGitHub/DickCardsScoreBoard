@@ -1,0 +1,66 @@
+
+rzslider {
+    display: inline-block;
+    height: 2px;
+    margin: 30px 0 15px;
+    position: relative;
+    vertical-align: middle;
+    width: 100%;
+}
+rzslider span {
+    display: inline-block;
+    position: absolute;
+    white-space: nowrap;
+}
+rzslider span.base {
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+rzslider span.bar {
+    background: none repeat scroll 0 0 #fff;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+}
+rzslider span.bar.selection {
+    background: none repeat scroll 0 0 #67b700;
+    width: 0;
+    z-index: 1;
+}
+rzslider span.pointer {
+    background-color: #fff;
+    border-radius: 16px;
+    cursor: pointer;
+    height: 32px;
+    top: -15px;
+    width: 32px;
+    z-index: 2;
+}
+rzslider span.pointer:after {
+    background: none repeat scroll 0 0 #71818e;
+    border-radius: 4px;
+    content: "";
+    height: 8px;
+    left: 12px;
+    position: absolute;
+    top: 12px;
+    width: 8px;
+}
+rzslider span.pointer:hover:after {
+    background-color: #67b700;
+}
+rzslider span.pointer.active:after {
+    background-color: #67b700;
+}
+rzslider span.bubble {
+    color: #00013a;
+    cursor: default;
+    padding: 1px 3px;
+    top: -32px;
+}
+rzslider span.bubble.selection {
+    top: 15px;
+}
+rzslider span.bubble.limit {
+}

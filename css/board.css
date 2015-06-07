@@ -1,0 +1,22 @@
+.form-control{
+	
+	width:55px;
+}
+.playername{
+	width:150px;
+}
+.playerHeadings{
+	color:blue;
+	font-size: 20px;
+	font-weight: bold;
+}
+.totalip{
+	border: 1px solid blue;
+}
+
+.hideBtn{
+	display: none;
+}
+.showBtn{
+	display:block;
+}
